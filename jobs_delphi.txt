@@ -1,0 +1,9 @@
+Delphi random5 fold0 --epochs 150
+Delphi random5 fold1 --epochs 150
+Delphi random5 fold2 --epochs 150
+Delphi random5 fold3 --epochs 150
+Delphi random5 fold4 --epochs 150
+Delphi loio DFCI --epochs 150
+Delphi loio MSK --epochs 150
+Delphi loio UHN --epochs 150
+Delphi loio VICC --epochs 150

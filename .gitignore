@@ -1,0 +1,13 @@
+# Whitelist: only source code is tracked. GENIE BPC data, derived tables, predictions, models and logs must stay in SPC AWS.
+*
+!*/
+!*.py
+!*.sh
+!jobs_*.txt
+!dashboard_assets/*.css
+!README.md
+!LICENSE-delphi
+!.gitignore
+# patient-level or AWS-specific notes: kept local
+PLAN.md
+HANDOFF.md
