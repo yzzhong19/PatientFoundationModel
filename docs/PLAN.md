@@ -371,3 +371,28 @@ Newest last. Every change to files, data, environment or plan is recorded here.
 | 19:16 | [auto status] Running: nothing running (GPU idle) |
 | 19:21 | [auto status] Running: nothing running (GPU idle) |
 | 19:21 | New analysis/public_plots.py -> plots_public/ (aggregate only, committed): perf_cindex.png, forest_hstu_vs_gbsa.png, km_clusters_by_cohort.png, breast_subtypes.png (KM + feature bars, no patient points), regimen_map.png (token-level). plots/ with per-patient UMAP points stays local. |
+| 19:26 | [auto status] Running: nothing running (GPU idle) |
+| 19:31 | [auto status] Running: nothing running (GPU idle) |
+| 19:36 | [auto status] Running: nothing running (GPU idle) |
+| 19:41 | [auto status] Running: nothing running (GPU idle) |
+| 19:46 | [auto status] Running: nothing running (GPU idle) |
+| 19:51 | [auto status] Running: nothing running (GPU idle) |
+| 19:56 | [auto status] Running: nothing running (GPU idle) |
+| 20:01 | [auto status] Running: nothing running (GPU idle) |
+| 20:06 | [auto status] Running: nothing running (GPU idle) |
+| 20:11 | [auto status] Running: nothing running (GPU idle) |
+| 20:16 | [auto status] Running: nothing running (GPU idle) |
+| 20:21 | [auto status] Running: nothing running (GPU idle) |
+| 20:26 | [auto status] Running: nothing running (GPU idle) |
+| 20:31 | [auto status] Running: nothing running (GPU idle) |
+| 20:36 | [auto status] Running: nothing running (GPU idle) |
+| 20:41 | [auto status] Running: nothing running (GPU idle) |
+| 20:46 | [auto status] Running: nothing running (GPU idle) |
+| 20:51 | [auto status] Running: nothing running (GPU idle) |
+| 20:56 | [auto status] Running: nothing running (GPU idle) |
+| 21:01 | [auto status] Running: nothing running (GPU idle) |
+| 21:06 | [auto status] Running: nothing running (GPU idle) |
+| 21:08 | User asked to simplify the simulator to just the survival lines. `dashboard.py` cut to one page: cohort / patient / treatment-point pickers, a what-if panel (regimen, new metastases, add/remove mutations, stage), and the predicted survival curve (as observed vs what-if) with 12/24-month risk and median OS. Removed the prognosis-over-time chart, patient card, event timeline, scan/MD/TMB edits, the patient filter and the Cohort checks / Model performance tabs. Callbacks tested on NSCLC/CRC/Breast; server restarted on 127.0.0.1:8050 (same proxy path). |
+| 21:11 | [auto status] Running: nothing running (GPU idle) |
+| 21:16 | [auto status] Running: nothing running (GPU idle) |
+| 21:17 | User asked for the embedding UMAP figures on GitHub. New `analysis/public_umap.py` -> plots_public/emb_umap_all.png (all patients, by cancer and by mean predicted 12-month risk) and plots_public/emb_breast_umap.png (breast residual clusters): same UMAPs/clusters as emb_plots.py but drawn as hexagonal bins, bins with < 5 patients suppressed, so no individual patient is plotted. |
