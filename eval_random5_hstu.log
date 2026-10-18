@@ -1,0 +1,9 @@
+metric                         auc12  auc24  cindex
+split   model                                      
+random5 Cox_clinical           0.725  0.772   0.670
+        Cox_clinical_genomics  0.726  0.770   0.670
+        GBSA_counts            0.784  0.827   0.719
+        HSTU                   0.805  0.837   0.743
+        HSTU_shuffledLabels    0.475  0.478   0.468
+        KM_cohort              0.581  0.590   0.567
+ALL_DONE

@@ -1,0 +1,7 @@
+  split   fold    a           b   diff  ci_lo  ci_hi  p_le0  n_landmarks
+random5  fold0 HSTU GBSA_counts 0.0214 0.0049 0.0365  0.003         2105
+random5  fold1 HSTU GBSA_counts 0.0333 0.0189 0.0478  0.001         2085
+random5  fold2 HSTU GBSA_counts 0.0368 0.0201 0.0543  0.000         2061
+random5  fold3 HSTU GBSA_counts 0.0515 0.0335 0.0675  0.000         2135
+random5  fold4 HSTU GBSA_counts 0.0529 0.0309 0.0734  0.000         2187
+random5 POOLED HSTU GBSA_counts 0.0244 0.0164 0.0329  0.000        10573

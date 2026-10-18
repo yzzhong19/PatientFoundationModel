@@ -1,0 +1,60 @@
+count matrix (10573, 671)
+genes covered by every sample: 21 ['AKT1', 'ALK', 'BRAF', 'CTNNB1', 'EGFR', 'ERBB2', 'FGFR1', 'FGFR2', 'FGFR3', 'HRAS', 'IDH1', 'KIT', 'KRAS', 'MET', 'NOTCH1']
+/opt/conda/lib/python3.12/site-packages/sksurv/linear_model/coxph.py:201: RuntimeWarning: overflow encountered in exp
+  risk_set += np.exp(xw[k])
+/opt/conda/lib/python3.12/site-packages/sksurv/linear_model/coxph.py:198: RuntimeWarning: overflow encountered in exp
+  risk_set2 += np.exp(xw[k])
+/opt/conda/lib/python3.12/site-packages/sksurv/linear_model/coxph.py:201: RuntimeWarning: overflow encountered in exp
+  risk_set += np.exp(xw[k])
+/opt/conda/lib/python3.12/site-packages/sksurv/linear_model/coxph.py:198: RuntimeWarning: overflow encountered in exp
+  risk_set2 += np.exp(xw[k])
+/opt/conda/lib/python3.12/site-packages/sksurv/linear_model/coxph.py:201: RuntimeWarning: overflow encountered in exp
+  risk_set += np.exp(xw[k])
+/opt/conda/lib/python3.12/site-packages/sksurv/linear_model/coxph.py:198: RuntimeWarning: overflow encountered in exp
+  risk_set2 += np.exp(xw[k])
+/opt/conda/lib/python3.12/site-packages/sksurv/linear_model/coxph.py:201: RuntimeWarning: overflow encountered in exp
+  risk_set += np.exp(xw[k])
+/opt/conda/lib/python3.12/site-packages/sksurv/linear_model/coxph.py:198: RuntimeWarning: overflow encountered in exp
+  risk_set2 += np.exp(xw[k])
+/opt/conda/lib/python3.12/site-packages/sksurv/linear_model/coxph.py:198: RuntimeWarning: overflow encountered in exp
+  risk_set2 += np.exp(xw[k])
+/opt/conda/lib/python3.12/site-packages/sksurv/linear_model/coxph.py:198: RuntimeWarning: overflow encountered in exp
+  risk_set2 += np.exp(xw[k])
+/opt/conda/lib/python3.12/site-packages/sksurv/linear_model/coxph.py:198: RuntimeWarning: overflow encountered in exp
+  risk_set2 += np.exp(xw[k])
+/opt/conda/lib/python3.12/site-packages/sksurv/linear_model/coxph.py:198: RuntimeWarning: overflow encountered in exp
+  risk_set2 += np.exp(xw[k])
+/opt/conda/lib/python3.12/site-packages/sksurv/linear_model/coxph.py:198: RuntimeWarning: overflow encountered in exp
+  risk_set2 += np.exp(xw[k])
+/opt/conda/lib/python3.12/site-packages/sksurv/linear_model/coxph.py:198: RuntimeWarning: overflow encountered in exp
+  risk_set2 += np.exp(xw[k])
+/opt/conda/lib/python3.12/site-packages/sksurv/linear_model/coxph.py:198: RuntimeWarning: overflow encountered in exp
+  risk_set2 += np.exp(xw[k])
+/opt/conda/lib/python3.12/site-packages/sksurv/linear_model/coxph.py:198: RuntimeWarning: overflow encountered in exp
+  risk_set2 += np.exp(xw[k])
+/opt/conda/lib/python3.12/site-packages/sksurv/linear_model/coxph.py:198: RuntimeWarning: overflow encountered in exp
+  risk_set2 += np.exp(xw[k])
+/opt/conda/lib/python3.12/site-packages/sksurv/linear_model/coxph.py:198: RuntimeWarning: overflow encountered in exp
+  risk_set2 += np.exp(xw[k])
+done loio MSK
+done loio DFCI
+done loio VICC
+done loio UHN
+/opt/conda/lib/python3.12/site-packages/sksurv/linear_model/coxph.py:201: RuntimeWarning: overflow encountered in exp
+  risk_set += np.exp(xw[k])
+/opt/conda/lib/python3.12/site-packages/sksurv/linear_model/coxph.py:198: RuntimeWarning: overflow encountered in exp
+  risk_set2 += np.exp(xw[k])
+/opt/conda/lib/python3.12/site-packages/sksurv/linear_model/coxph.py:201: RuntimeWarning: overflow encountered in exp
+  risk_set += np.exp(xw[k])
+/opt/conda/lib/python3.12/site-packages/sksurv/linear_model/coxph.py:198: RuntimeWarning: overflow encountered in exp
+  risk_set2 += np.exp(xw[k])
+/opt/conda/lib/python3.12/site-packages/sksurv/linear_model/coxph.py:198: RuntimeWarning: overflow encountered in exp
+  risk_set2 += np.exp(xw[k])
+/opt/conda/lib/python3.12/site-packages/sksurv/linear_model/coxph.py:198: RuntimeWarning: overflow encountered in exp
+  risk_set2 += np.exp(xw[k])
+done loco Breast
+done loco Bladder
+done loco CRC
+done loco NSCLC
+done loco Prostate
+done loco Pancreatic

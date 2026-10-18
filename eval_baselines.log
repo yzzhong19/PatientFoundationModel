@@ -1,0 +1,14 @@
+metric                         auc12  auc24  cindex
+split   model                                      
+loco    Cox_clinical           0.685  0.730   0.632
+        Cox_clinical_genomics  0.689  0.735   0.636
+        GBSA_counts            0.697  0.756   0.647
+        KM_cohort              0.408  0.400   0.426
+loio    Cox_clinical           0.719  0.763   0.665
+        Cox_clinical_genomics  0.718  0.759   0.664
+        GBSA_counts            0.779  0.821   0.714
+        KM_cohort              0.570  0.581   0.559
+random5 Cox_clinical           0.725  0.772   0.670
+        Cox_clinical_genomics  0.726  0.770   0.670
+        GBSA_counts            0.784  0.827   0.719
+        KM_cohort              0.581  0.590   0.567

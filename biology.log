@@ -1,0 +1,28 @@
+== (1)+(2) observed OS and HSTU out-of-fold risk; x = 1 is the mutant / TMB-high group
+{"check": "STK11 mut vs WT, NSCLC platinum", "n0": 286, "n1": 44, "events": 179, "median_os_mo_0": 24.869, "median_os_mo_1": 20.138, "HR_uni": 1.395, "HR_uni_lo": 0.954, "HR_uni_hi": 2.041, "HR_adj": 1.768, "HR_adj_lo": 1.203, "HR_adj_hi": 2.598, "hstu_risk12_0": 0.347, "hstu_risk12_1": 0.297}
+{"check": "STK11 mut vs WT, NSCLC non-platinum (contrast)", "n0": 605, "n1": 72, "events": 425, "median_os_mo_0": 18.233, "median_os_mo_1": 12.812, "HR_uni": 1.409, "HR_uni_lo": 1.07, "HR_uni_hi": 1.857, "HR_adj": 1.485, "HR_adj_lo": 1.124, "HR_adj_hi": 1.963, "hstu_risk12_0": 0.381, "hstu_risk12_1": 0.502}
+{"check": "KEAP1 mut vs WT, NSCLC platinum", "n0": 276, "n1": 44, "events": 169, "median_os_mo_0": 25.263, "median_os_mo_1": 22.142, "HR_uni": 1.233, "HR_uni_lo": 0.819, "HR_uni_hi": 1.856, "HR_adj": 1.457, "HR_adj_lo": 0.963, "HR_adj_hi": 2.206, "hstu_risk12_0": 0.343, "hstu_risk12_1": 0.301}
+{"check": "KEAP1 mut vs WT, NSCLC non-platinum (contrast)", "n0": 578, "n1": 68, "events": 402, "median_os_mo_0": 17.674, "median_os_mo_1": 14.323, "HR_uni": 1.41, "HR_uni_lo": 1.05, "HR_uni_hi": 1.894, "HR_adj": 1.484, "HR_adj_lo": 1.101, "HR_adj_hi": 1.998, "hstu_risk12_0": 0.388, "hstu_risk12_1": 0.453}
+{"check": "STK11_KEAP1 mut vs WT, NSCLC platinum", "n0": 251, "n1": 69, "events": 169, "median_os_mo_0": 26.741, "median_os_mo_1": 19.514, "HR_uni": 1.46, "HR_uni_lo": 1.045, "HR_uni_hi": 2.04, "HR_adj": 1.794, "HR_adj_lo": 1.278, "HR_adj_hi": 2.519, "hstu_risk12_0": 0.345, "hstu_risk12_1": 0.309}
+{"check": "STK11_KEAP1 mut vs WT, NSCLC non-platinum (contrast)", "n0": 536, "n1": 111, "events": 402, "median_os_mo_0": 18.397, "median_os_mo_1": 14.783, "HR_uni": 1.398, "HR_uni_lo": 1.101, "HR_uni_hi": 1.776, "HR_adj": 1.466, "HR_adj_lo": 1.15, "HR_adj_hi": 1.868, "hstu_risk12_0": 0.377, "hstu_risk12_1": 0.478}
+{"check": "TMB high (>=3) vs low, NSCLC IO line>=2", "n0": 206, "n1": 135, "events": 239, "median_os_mo_0": 11.301, "median_os_mo_1": 12.812, "HR_uni": 0.882, "HR_uni_lo": 0.681, "HR_uni_hi": 1.142, "HR_adj": 0.902, "HR_adj_lo": 0.693, "HR_adj_hi": 1.174, "hstu_risk12_0": 0.524, "hstu_risk12_1": 0.481}
+{"check": "TMB high (>=3) vs low, NSCLC non-IO (contrast)", "n0": 545, "n1": 217, "events": 471, "median_os_mo_0": 21.485, "median_os_mo_1": 16.459, "HR_uni": 1.333, "HR_uni_lo": 1.101, "HR_uni_hi": 1.614, "HR_adj": 1.476, "HR_adj_lo": 1.216, "HR_adj_hi": 1.791, "hstu_risk12_0": 0.36, "hstu_risk12_1": 0.383}
+fold0: flips done (1375 rows so far)
+fold1: flips done (2921 rows so far)
+fold2: flips done (4366 rows so far)
+fold3: flips done (5676 rows so far)
+fold4: flips done (7042 rows so far)
+== (3) in-silico flips: mean change in HSTU 12-month risk (percentage points), risk(mut / TMB-high) - risk(WT / TMB-low)
+{"part": "flip", "check": "KEAP1 add (WT->mut)", "group": "non-platinum", "n_patients": 578, "n_landmarks": 1133, "delta_pp": -0.438, "ci_lo": -0.494, "ci_hi": -0.386, "frac_positive": 0.194}
+{"part": "flip", "check": "KEAP1 add (WT->mut)", "group": "platinum", "n_patients": 276, "n_landmarks": 304, "delta_pp": -0.473, "ci_lo": -0.553, "ci_hi": -0.391, "frac_positive": 0.224}
+{"part": "flip", "check": "KEAP1 remove (mut->WT)", "group": "non-platinum", "n_patients": 68, "n_landmarks": 125, "delta_pp": -0.555, "ci_lo": -0.704, "ci_hi": -0.404, "frac_positive": 0.152}
+{"part": "flip", "check": "KEAP1 remove (mut->WT)", "group": "platinum", "n_patients": 44, "n_landmarks": 49, "delta_pp": -0.512, "ci_lo": -0.68, "ci_hi": -0.349, "frac_positive": 0.265}
+{"part": "flip", "check": "STK11 add (WT->mut)", "group": "non-platinum", "n_patients": 605, "n_landmarks": 1180, "delta_pp": -0.225, "ci_lo": -0.283, "ci_hi": -0.166, "frac_positive": 0.319}
+{"part": "flip", "check": "STK11 add (WT->mut)", "group": "platinum", "n_patients": 286, "n_landmarks": 317, "delta_pp": -0.191, "ci_lo": -0.314, "ci_hi": -0.076, "frac_positive": 0.372}
+{"part": "flip", "check": "STK11 remove (mut->WT)", "group": "non-platinum", "n_patients": 72, "n_landmarks": 140, "delta_pp": -0.22, "ci_lo": -0.387, "ci_hi": -0.065, "frac_positive": 0.321}
+{"part": "flip", "check": "STK11 remove (mut->WT)", "group": "platinum", "n_patients": 44, "n_landmarks": 48, "delta_pp": -0.027, "ci_lo": -0.216, "ci_hi": 0.201, "frac_positive": 0.312}
+{"part": "flip", "check": "Stage IV vs I (positive control)", "group": "all NSCLC", "n_patients": 878, "n_landmarks": 1873, "delta_pp": 5.753, "ci_lo": 5.456, "ci_hi": 6.048, "frac_positive": 0.983}
+{"part": "flip", "check": "TMB >6 vs 0-0.5", "group": "IO line 1", "n_patients": 40, "n_landmarks": 40, "delta_pp": 3.393, "ci_lo": 2.361, "ci_hi": 4.285, "frac_positive": 0.925}
+{"part": "flip", "check": "TMB >6 vs 0-0.5", "group": "IO line>=2", "n_patients": 341, "n_landmarks": 386, "delta_pp": 1.502, "ci_lo": 1.137, "ci_hi": 1.873, "frac_positive": 0.751}
+{"part": "flip", "check": "TMB >6 vs 0-0.5", "group": "non-IO", "n_patients": 762, "n_landmarks": 1447, "delta_pp": 1.508, "ci_lo": 1.297, "ci_hi": 1.723, "frac_positive": 0.758}
+wrote biology_results.csv, biology_flips.parquet

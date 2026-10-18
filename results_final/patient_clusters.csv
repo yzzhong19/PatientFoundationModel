@@ -1,0 +1,16 @@
+cohort,cluster,n,median_os,risk12,top
+NSCLC,0,151,19.349540078843624,0.3547233,"HIST=Non Small Cell Lung Cancer 15% vs 7%, MUT:ATM 13% vs 7%, MET:pelvis 12% vs 7%"
+NSCLC,1,727,20.49934296977661,0.3629135,
+CRC,2,284,inf,0.07162565,TM:CEA=norm 78% vs 52%
+CRC,1,480,17.017082785808146,0.41752607,"SCAN:progressing 90% vs 55%, MD:progressing 82% vs 42%, MD:indet 96% vs 79%, start:trifluridine 7% vs 1%, start:investigational 9% vs 2%"
+CRC,0,68,19.97371879106439,0.4233482,"MUT:PDGFRA 9% vs 2%, STAGE=Stage IV 81% vs 53%, PANEL:VICC-01-T7 22% vs 11%"
+Breast,0,194,inf,0.009144387,"MUT:CBFB 8% vs 1%, SAMPLE:Primary tumor 86% vs 48%, PANEL:MSK-IMPACT468 60% vs 19%, STAGE=Stage I 39% vs 12%, TMB:0-0.5 36% vs 13%, AMP:WHSC1L1 10% vs 4%"
+Breast,1,556,20.76215505913272,0.33879957,"MD:progressing 92% vs 8%, SCAN:progressing 96% vs 18%, SCAN:mixed 29% vs 1%, start:eribulin 11% vs 0%, MD:mixed 11% vs 0%, TM:CA2729=2-5x 10% vs 0%"
+Pancreatic,0,172,9.986859395532194,0.50999564,"TM:CEA=norm 27% vs 15%, TM:CEA=1-2x 16% vs 9%, TM:CA19-9=5-20x 44% vs 35%"
+Pancreatic,1,456,10.21681997371879,0.5356717,"PATH:Cytology 73% vs 55%, STAGE=Stage III 11% vs 6%"
+Prostate,0,258,inf,0.025950897,"SAMPLE:Primary tumor 76% vs 43%, TM:PSA=norm 92% vs 79%, TMB:0-0.5 48% vs 26%, PANEL:DFCI-ONCOPANEL-2 11% vs 5%, start:degarelix 40% vs 21%"
+Prostate,2,63,inf,0.10512286,"MUT:ARID2 8% vs 2%, SAMPLE:Primary tumor 79% vs 54%, PANEL:DFCI-ONCOPANEL-1 13% vs 5%, TM:PSA=norm 92% vs 83%"
+Prostate,1,311,15.374507227332456,0.468288,"start:docetaxel 51% vs 3%, REG_END:cabazitaxel 11% vs 0%, REG_END:docetaxel 39% vs 2%, start:cabazitaxel 17% vs 1%, PANEL:DFCI-ONCOPANEL-3.1 10% vs 1%, MD:mixed 16% vs 1%"
+Bladder,0,73,inf,0.03094064,"start:bcg 68% vs 17%, MUT:BRAF 11% vs 2%, STAGE=Stage I 59% vs 19%, MUT:POLE 8% vs 2%, MUT:ERCC2 15% vs 4%, start:mitomycin 25% vs 7%"
+Bladder,2,67,22.733245729303547,0.27917358,"MUT:CARD11 7% vs 2%, PATH:Cytology 91% vs 73%, MUT:MAP3K1 9% vs 3%, MUT:DICER1 12% vs 5%"
+Bladder,1,205,8.935611038107753,0.5106733,"start:docetaxel 6% vs 0%, SCAN:progressing 96% vs 55%, REG_END:docetaxel 5% vs 0%, MD:progressing 94% vs 46%, MD:indet 95% vs 62%, start:carboplatin+paclitaxel 7% vs 1%"

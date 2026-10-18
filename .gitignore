@@ -1,4 +1,6 @@
-# Whitelist: only source code is tracked. GENIE BPC data, derived tables, predictions, models and logs must stay in SPC AWS.
+# Whitelist. Tracked: source code, aggregate results (metrics, CIs, cluster summaries), logs, manuscript, redacted notes.
+# Never tracked (must stay in SPC AWS): raw GENIE BPC, patient-level derived tables (events, landmarks, labels, genomics
+# status, splits), per-landmark predictions, embeddings, model weights.
 *
 !*/
 !*.py
@@ -8,6 +10,20 @@
 !README.md
 !LICENSE-delphi
 !.gitignore
-# patient-level or AWS-specific notes: kept local
+!manuscript.md
+!docs/*.md
+!results*.csv
+!paired_*.csv
+!biology_results.csv
+!gbsa_ref_random5.csv
+!top_genes.csv
+!results_final/*.csv
+!results_final/*.log
+!*.log
+pip.log
+dashboard.log
+# original notes name AWS buckets/account: redacted copies live in docs/
 PLAN.md
 HANDOFF.md
+runs/
+figs/
