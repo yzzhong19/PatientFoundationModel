@@ -19,6 +19,7 @@
 !top_genes.csv
 !results_final/*.csv
 !results_final/*.log
+!plots_public/*.png
 !*.log
 pip.log
 dashboard.log

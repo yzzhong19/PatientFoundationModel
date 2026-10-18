@@ -359,3 +359,15 @@ Newest last. Every change to files, data, environment or plan is recorded here.
 | 18:27 | New rsf_baseline.py: random survival forest (sksurv, 300 trees, min leaf 20, sqrt features) on the same 671 token counts as GBSA, random5 only; training times rounded up to monthly bins for memory. Per-fold test C .742/.742/.727/.723/.696 (GBSA .743/.736/.717/.714/.691). Pooled (B=200): C .725 [.716,.734], AUC12 .801 [.789,.813], AUC24 .837 [.824,.849] (HSTU .743 / .805 / .837). Paired HSTU-RSF (B=1000) pooled C +.018 [.010,.026], every fold CI>0 (+.022 to +.048). RSF-GBSA paired still running. Outputs runs/RSF_counts/, results_final/results_rsf_random5_B200.csv, paired_HSTU_vs_RSF_counts_random5.csv. |
 | 18:29 | RSF vs GBSA paired (B=1000) pooled +.006 [.003,.009] (folds -.000/+.006/+.010/+.009/+.005). Added RSF to manuscript.md (Table 2 row, results paragraph incl. horizon-AUC tie with HSTU, methods mention). |
 | 18:31 | [auto status] Running: nothing running (GPU idle) |
+| 18:32 | Commit (RSF baseline, RSF results, manuscript, docs/PLAN.md). Local main is 2 commits ahead of GitHub (6f415c3 + this); push needs user credentials. |
+| 18:36 | [auto status] Running: nothing running (GPU idle) |
+| 18:41 | [auto status] Running: nothing running (GPU idle) |
+| 18:46 | [auto status] Running: nothing running (GPU idle) |
+| 18:51 | [auto status] Running: nothing running (GPU idle) |
+| 18:56 | [auto status] Running: nothing running (GPU idle) |
+| 19:01 | [auto status] Running: nothing running (GPU idle) |
+| 19:06 | [auto status] Running: nothing running (GPU idle) |
+| 19:11 | [auto status] Running: nothing running (GPU idle) |
+| 19:16 | [auto status] Running: nothing running (GPU idle) |
+| 19:21 | [auto status] Running: nothing running (GPU idle) |
+| 19:21 | New analysis/public_plots.py -> plots_public/ (aggregate only, committed): perf_cindex.png, forest_hstu_vs_gbsa.png, km_clusters_by_cohort.png, breast_subtypes.png (KM + feature bars, no patient points), regimen_map.png (token-level). plots/ with per-patient UMAP points stays local. |
