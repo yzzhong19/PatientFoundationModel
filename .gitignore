@@ -23,7 +23,7 @@
 pip.log
 dashboard.log
 # original notes name AWS buckets/account: redacted copies live in docs/
-PLAN.md
-HANDOFF.md
+/PLAN.md
+/HANDOFF.md
 runs/
 figs/
