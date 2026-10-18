@@ -351,3 +351,11 @@ Newest last. Every change to files, data, environment or plan is recorded here.
 | 18:01 | [auto status] Running: nothing running (GPU idle) |
 | 18:03 | New analysis/emb_plots.py -> plots/emb_umap_all.png (UMAP of 4,065 out-of-fold patient embeddings by cohort and predicted risk), emb_clusters_by_cohort.png (per-cohort k-means UMAP + KM), emb_breast_subtypes.png (residual clusters: HER2+/CDK12, CDH1 lobular, trial-heavy, later-line chemo; UMAP, KM, defining features), emb_regimen_map.png (contextual regimen token UMAP by drug class). plots/ kept local (patient-level points). |
 | 18:06 | [auto status] Running: nothing running (GPU idle) |
+| 18:10 | Commit 6f415c3: analysis/emb_plots.py, docs/PLAN.md + docs/HANDOFF.md (redacted), .gitignore fix (/PLAN.md, /HANDOFF.md). User's own commit b3d4fd5 (aggregate results, logs, manuscript) is on GitHub; 6f415c3 not pushed (needs user credentials). Plots stay local. |
+| 18:11 | [auto status] Running: nothing running (GPU idle) |
+| 18:16 | [auto status] Running: nothing running (GPU idle) |
+| 18:21 | [auto status] Running: nothing running (GPU idle) |
+| 18:26 | [auto status] Running: nothing running (GPU idle) |
+| 18:27 | New rsf_baseline.py: random survival forest (sksurv, 300 trees, min leaf 20, sqrt features) on the same 671 token counts as GBSA, random5 only; training times rounded up to monthly bins for memory. Per-fold test C .742/.742/.727/.723/.696 (GBSA .743/.736/.717/.714/.691). Pooled (B=200): C .725 [.716,.734], AUC12 .801 [.789,.813], AUC24 .837 [.824,.849] (HSTU .743 / .805 / .837). Paired HSTU-RSF (B=1000) pooled C +.018 [.010,.026], every fold CI>0 (+.022 to +.048). RSF-GBSA paired still running. Outputs runs/RSF_counts/, results_final/results_rsf_random5_B200.csv, paired_HSTU_vs_RSF_counts_random5.csv. |
+| 18:29 | RSF vs GBSA paired (B=1000) pooled +.006 [.003,.009] (folds -.000/+.006/+.010/+.009/+.005). Added RSF to manuscript.md (Table 2 row, results paragraph incl. horizon-AUC tie with HSTU, methods mention). |
+| 18:31 | [auto status] Running: nothing running (GPU idle) |

@@ -222,7 +222,7 @@ L = CE(type) + CE(value | type) + 0.5·CE(log₂ gap bucket)
 2. **Cox clinical** (ridge-penalised, penalty chosen by grouped CV on train patients): cohort and stage one-hots, age
    band (ordinal), log line number, regimen drug-class bits, sex.
 3. **Cox clinical + genomics:** adds 0/1 alteration flags for genes covered by every panel, as of the landmark.
-4. **GBSA:** gradient-boosted Cox trees (150 trees, depth 3, learning rate 0.05, subsample 0.7, ≥20 per leaf, √p
+4. **GBSA** (and, random5 only, a random survival forest on the same inputs, `rsf_baseline.py`): gradient-boosted Cox trees (150 trees, depth 3, learning rate 0.05, subsample 0.7, ≥20 per leaf, √p
    features). Inputs are counts of 671 tokens (frequency ≥30) in the history up to the landmark. It has no order or
    timing information.
 5. **Delphi** [ref]: the published architecture (vendored, MIT licence), retrained from scratch in each fold on the same
@@ -280,6 +280,7 @@ Specified before looking at the flip results:
 | | Cox clinical | 0.670 [0.660–0.680] | 0.725 | 0.772 |
 | | Cox clinical + genomics | 0.670 [0.659–0.681] | 0.726 | 0.770 |
 | | GBSA counts | 0.719 [0.709–0.728] | 0.784 | 0.827 |
+| | RSF counts | 0.725 [0.716–0.734] | 0.801 [0.789–0.813] | 0.837 [0.824–0.849] |
 | | Delphi | 0.727 [0.718–0.736] | 0.783 | 0.808 |
 | | **HSTU** | **0.743 [0.735–0.751]** | **0.805** [0.794–0.816] | **0.837** [0.826–0.852] |
 | loio | Cox clinical | 0.665 [0.655–0.674] | 0.719 | 0.763 |
@@ -292,6 +293,11 @@ Specified before looking at the flip results:
 
 Pooled C-indices mix the fold models, so they differ slightly from the per-fold means: random5 HSTU 0.760 vs GBSA 0.720.
 Adding panel-wide genomic flags to the clinical Cox model did not improve it.
+
+A random survival forest (RSF; 300 trees, ≥20 per leaf, √p features) on the same token counts, run on random5 only, was the
+strongest tabular baseline: RSF − GBSA +0.006 [0.003, 0.009]. HSTU − RSF was +0.018 [0.010, 0.026] in C-index, with every
+fold's CI above 0 (+0.022 to +0.048). At fixed horizons, however, RSF matched HSTU (AUC 12 mo 0.801 vs 0.805; AUC 24 mo
+0.837 vs 0.837). HSTU's advantage is in ranking risk across follow-up rather than in discrimination at 1 or 2 years.
 
 **Table 3. Paired difference in C-index, HSTU minus comparator (patient bootstrap B = 1,000).**
 
